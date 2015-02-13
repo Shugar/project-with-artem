@@ -1,2 +1,0 @@
-# project-with-artem
-msgo
