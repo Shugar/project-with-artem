@@ -1,20 +1,55 @@
 doctype html
-head
-  meta(name="viewport" content="width=device-width")
-  link(rel="stylesheet" href="stylesheets/app.css")
-  meta(charset="utf-8")
-  title Prototype
-
-  script(src="javascripts/vendor.js")
-  script(src="javascripts/app.js")
-
-
-  script.
-    require('initialize');
-
-
-body
-  h1 Hello, Tigran!
-  h2 Hello, Artem! :) 
-  h3 Hello, Я сам бы не смог! Спасибо
-  h4 Никогда не вкладывай один H в другой. 
+html
+	head
+		meta(name="viewport" content="width=device-width")
+		link(rel="stylesheet" href="stylesheets/app.css")
+		meta(charset="utf-8")
+		title Prototype
+	
+		script(src="javascripts/vendor.js")
+		script(src="javascripts/app.js")
+		
+		
+	script.
+		require('initialize');
+		
+		
+	body
+		.head
+			.container
+				.info
+					h4#date 16
+					img.leftside(src="images/calendar.png")
+					button.menu(href="#" style="background-image: url(images/menu_burger.png)")
+					button.settings(href="#" style="background-image: url(images/settings_cog.png)")
+					img.leftside(src="images/pink_flag.png")
+					.midinfo
+						.course(style="margin-right: 10px")
+							img(src="images/euro_logo.png")
+							h4#euro 68,3681
+							h6#eurobal +5,9870
+						.course
+							img.dollar(src="images/dollar_logo.png")
+							h4#dollar 56,2376
+							h6#dollarbal +6,4987
+						.wheather
+							img.oner(src="images/wheather.png")
+							h3#grad -2 C
+								img.twoer(src="images/gradus_dot.png")
+		.inside
+			.container2
+				a#profile(href="#user") ПЁТР ЛУЖКОВ
+				.mainer
+					.logoput
+						input(type="search" placeholder="" style="background: url(images/logo.png)")
+					.search
+						a(href="#")
+							img(src="images/bunny2.png")
+						.mainput
+							button(type="submit" style="background-image: url(images/magnifier.png)") ПОИСК
+							input(type="search" placeholder="Например, услуги флориста")
+				.reklamer
+				.news
+				.special
+				.adver
+		.footer
